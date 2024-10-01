@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body{
+    background-color: rgb(20, 0, 30);
+    height: 100px;
+    scroll-behavior: smooth;
+    
+
+}
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color: #4fffb0;
+    
+}
+
+.navbar-nav .nav-link{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-family: "Lobster", sans-serif;
+    font-size: 25px;
+}
+
+.navbar-dark{
+    background-color: rgb(18, 1, 46);
+}
+
+.circular-image-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image{
+    width: 59%;
+    height: auto;
+    display: block;
+
+}
+
+.name{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title{
+    color: #ffd64f;
+}
+
+.social_links{
+    overflow: hidden;
+    border-radius: 50%;
+    border: -1px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_image{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+    color: rgb(0, 255, 106);
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Youtuber";
+    color: #ff7f50;
+    /* border-left: 2px solid #ff7f50; */
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px); /* Corrected 'cal' to 'calc' */
+    height: 100%;
+    background-color: #0b0a0a;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #50bcff; /* Corrected 'before-left' to 'border-left' */
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Youtuber";
+    }
+    21%, 40% {
+        content: "Blogger";
+    }
+    41%, 60% {
+        content: "Developer";
+    }
+    61%, 80% {
+        content: "Designer";
+    }
+    81%, 100% {
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.jumbtron{
+    background-color: #002440;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display4 {
+    color: #eef3f8;
+    font-size: 24px;
+}
+.lead{
+    font-size: 18px;
+    color: #28a745;
+}
+.form-container{
+    --bs-gutter-x: 15.5rem;
+}
+
+
+
+   
+
+
